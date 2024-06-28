@@ -1,0 +1,87 @@
+//1.calculatesum
+function calculateSum(a,b){
+    x=a+b;
+    return x;
+}
+ let s=calculateSum(5,7);
+ console.log(s);
+
+//2.even or odd
+function isEven(a){
+    if(a%2==0)
+     return true;
+    else
+      return false;
+}
+let t=isEven(7);
+if(t==true)
+  console.log("even");
+else
+console.log("odd");
+
+//3.findmax
+function findMax(a)
+{
+    let max=a[0];
+    for(let i=1;i<a.length;i++)
+      {if(a[i]>max)
+      max=a[i];}
+    return max;
+}
+let arr=[5,7,8,10,11];
+let u=findMax(arr);
+console.log(u);
+
+//4.reversestring
+function reverseString(b){
+  let arr=b.split("");
+  let rev=arr.reverse();
+  return rev.join();
+}
+let e="chernobyl";
+let y=reverseString(e);
+console.log(y);
+
+//5.filteroddnumbers
+function filteroddnumber(arr){
+  let odd=[];
+  for(let i=0;i<arr.length;i++)
+  {
+    if(arr[i]%2!=0)
+     odd.push(arr[i]);
+  }
+  return odd;
+}
+let anArr=[5,6,7,8,9,11];
+let oddNumbers=filteroddnumber(anArr);
+console.log(oddNumbers);
+
+//6.sumArray
+function sumArray(arr){
+  let sum=0;
+  for(let i=0;i<arr.length;i++)
+      sum+=arr[i];
+  return sum;
+}
+let AnArr=[5,6,7,8,9,12,13];
+let sumarray=sumArray(AnArr);
+console.log(sumarray);
+
+//7.sortarray
+function sortArray(arr){
+  let unsorted=arr.split("")
+  let sortArr=unsorted.sort()
+  return sortArr.join()
+}
+let unsort="hcfeabgd"
+let sorted=sortArray(unsort)
+console.log(sorted)
+
+//8.capitalizefirstletter
+function capitalizefirstletter(str){
+  return str.charAt(0).toUpperCase()+str.slice(1)
+}
+let UC=capitalizefirstletter("lamine")
+console.log(UC)
+
+
